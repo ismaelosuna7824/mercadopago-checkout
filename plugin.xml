@@ -20,12 +20,12 @@
       </js-module>
       <config-file target="res/xml/config.xml" parent="/*">
         <feature name="Mercadopago">
-          <param name="android-package" value="com.example.Mercadopago" />
+          <param name="android-package" value="com.hbaigorria.Mercadopago" />
           <param name="onload" value="true" />
         </feature>
       </config-file>
-      <framework src="src/android/com/example/build.gradle" custom="true" type="gradleReference" />
-      <source-file src="src/android/com/example/Mercadopago.java" target-dir="src/com/example/" />
+      <framework src="src/android/com/hbaigorria/build.gradle" custom="true" type="gradleReference" />
+      <source-file src="src/android/com/hbaigorria/Mercadopago.java" target-dir="src/com/hbaigorria/" />
     </platform>
 
     <!-- ios -->

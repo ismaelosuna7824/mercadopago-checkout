@@ -1,6 +1,6 @@
 /**
  */
-package com.example;
+package com.hbaigorria;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
@@ -31,13 +31,7 @@ public class Mercadopago extends CordovaPlugin {
   }
 
   public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
-    if(action.equals("saludar")) {
-      // An example of returning data back to the web layer
-       String phrase = args.getString(0);
-      // Echo back the first argument      
-      final PluginResult result = new PluginResult(PluginResult.Status.OK, "Hola todo el... "+phrase);
-      callbackContext.sendPluginResult(result);
-    }else if(action.equals("pagar")){
+    if(action.equals("pagar")){
       preference = args.getString(0);
       key = args.getString(1);
       CheckoutPreference checkoutPreference = new CheckoutPreference(preference);
