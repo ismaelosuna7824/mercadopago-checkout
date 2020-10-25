@@ -1,0 +1,16 @@
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io'}
+    }
+}
+
+dependencies {
+    implementation 'com.mercadopago:sdk:3.8.0'
+}
+
+android {
+    packagingOptions {
+        exclude 'META-INFO/NOTICE'
+        exclude 'META-INFO/LICENSE'
+    }
+}

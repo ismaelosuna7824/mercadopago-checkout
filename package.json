@@ -1,0 +1,25 @@
+{
+  "name": "mercadopago",
+  "version": "1.0.0",
+  "description": "Integración checkout mercadopago",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigobaigorria/mercadopago-checkout.git"
+  },
+  "keywords": [
+    "mercadopago",
+    "ionic",
+    "checkout",
+    "android"
+  ],
+  "author": "Hugo Rodrigo Baigorria",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodrigobaigorria/mercadopago-checkout/issues"
+  },
+  "homepage": "https://github.com/rodrigobaigorria/mercadopago-checkout#readme"
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="mercadopago-hbaigorria"
+    version="1.0.0">
+    <name>Mercadopago Checkout Plugin</name>
+    <description></description>
+    <license>MIT</license>
+    <keywords></keywords>
+    <repo>https://github.com/rodrigobaigorria/mercadopago-checkout.git</repo>
+    
+
+    <!-- android -->
+    <platform name="android">
+      <js-module src="www/plugin.js" name="plugin">
+        <runs/>
+
+        <!-- Este es el nombre por el cual se accedera el plugin -->
+        <clobbers target="Mercadopago" />
+      </js-module>
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="Mercadopago">
+          <param name="android-package" value="com.example.Mercadopago" />
+          <param name="onload" value="true" />
+        </feature>
+      </config-file>
+      <framework src="src/android/com/example/build.gradle" custom="true" type="gradleReference" />
+      <source-file src="src/android/com/example/Mercadopago.java" target-dir="src/com/example/" />
+    </platform>
+
+    <!-- ios -->
+    <!--
+    <platform name="ios">
+        <js-module src="www/plugin.js" name="plugin">
+            <runs/>
+            <clobbers target="Mercadopago" />
+        </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="Mercadopago">
+                <param name="ios-package" value="Mercadopago" onload="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/Mercadopago.h" />
+        <source-file src="src/ios/Mercadopago.m" />
+    </platform>
+   -->
+</plugin>
