@@ -3,7 +3,7 @@
 
 # Instalación:
 
-ionic cordova plugin add https://github.com/rodrigobaigorria/mercadopago-checkout.git --save
+ionic cordova plugin add https://github.com/rodrigobaigorria/mercadopago-checkout.git 
 
 
 # Implementación:
