@@ -17,13 +17,13 @@ Del lado del backend debes crear la preferencia de pago, para crear la preferenc
 
 Una vez obtenido el id de preferencia, hacemos el llamado al plugin pasandole dos parametros, el id de preferencia y la key.
 
-
+```xml
  (<any>window).Mercadopago.pagar("ID_DE_LA_REFERENCIA", "KEY_DE_MERCADOPAGO", (res)=>{
         //Lo que queremos que haga si la respuesta es exitosa
       }, (err)=>{
         //Lo que queremos que haga si la respuesta es de error
       });
-
+```
 
 
 
